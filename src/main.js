@@ -76,6 +76,84 @@ body{
 #text_2{
     display:block;
 }
+#line_6{
+    display:block;
+}
+#text_3{
+    display:block;
+}
+#six{
+    top:220px;
+}
+#line_7{
+    display:block;
+}
+#text_4{
+    display:block;
+}
+#seven{
+    top:290px;
+}
+
+#line_8{
+    display:block;
+}
+#text_5{
+    display:block;
+}
+#eight{
+    top:360px;
+}
+#line_9{
+    display:block;
+}
+#text_6{
+    display:block;
+}
+#nine{
+    top:430px;
+}
+#line_10{
+    display:block;
+}
+#text_7{
+    display:block;
+}
+#ten{
+    top:500px;
+}
+
+#line_11{
+    display:block;
+}
+#text_8{
+    display:block;
+}
+#eleven{
+    top:570px;
+}
+
+#line_12{
+    display:block;
+}
+#text_9{
+    display:block;
+}
+#twelve{
+    top:640px;
+}
+
+
+#line_13{
+    display:block;
+}
+#text_10{
+    display:block;
+}
+#thirteen{
+    top:640px;
+}
+
 `
 console.log(string.length)
 let n=-1
