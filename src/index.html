@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <style>
+      * {
+        transition: all 0.3s;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #body1 {
+        display: flex;
+        width: 100vw;
+      }
+      #total {
+        display: flex;
+      }
+      #right {
+        height: 90vh;
+        width: 40vw;
+        background: white;
+        display: none;
+        position: fixed;
+        top: 5vh;
+        right: 5vw;
+      }
+      #top {
+        position: relative;
+        color: black;
+        display: flex;
+        border: 1px solid red;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 3vh;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      #user {
+        display: none;
+        border: 3px solid black;
+        padding: 0.5em 0.8em;
+        position: relative;
+      }
+      #third {
+        display: none;
+        border: 3px solid black;
+        padding: 0.5em 0.8em;
+      }
+      #github {
+        display: none;
+        border: 3px solid black;
+        padding: 0.5em 0.8em;
+      }
+      #middle {
+        border: 1px solid black;
+        height: 50vh;
+      }
+      #one {
+        position: relative;
+      }
+      #line_1 {
+        border: 1px dashed black;
+        height: 60vh;
+        width: 0;
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      #two {
+        position: relative;
+      }
+      #line_2 {
+        border: 1px dashed black;
+        height: 60vh;
+        width: 0;
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      #three {
+        position: relative;
+      }
+      #line_3 {
+        border: 1px dashed black;
+        height: 60vh;
+        width: 0;
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      /* #right {
+        height: 710px;
+        width: 600px;
+      } */
+      #four {
+        position: absolute;
+        top: 150px;
+        left: 80px;
+        /* border: 1px solid green; */
+      }
+      #line_4 {
+        width: 198px;
+        border: 1px solid black;
+        position: relative;
+        display: none;
+      }
+      #left_1 {
+        width: 10px;
+        transform: rotate(45deg);
+        border: 1px solid black;
+        position: absolute;
+        right: 3px;
+        bottom: 1px;
+      }
+      #right_1 {
+        width: 10px;
+        transform: rotate(-45deg);
+        border: 1px solid black;
+        position: absolute;
+        right: 3px;
+        top: 1px;
+      }
+      #block_1 {
+        width: 10px;
+        height: 30px;
+        background: black;
+        position: absolute;
+        right: -5px;
+        top: -15px;
+      }
+      #text_1 {
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        font-size: 15px;
+        display: none;
+      }
+      #five {
+        position: absolute;
+        top: 150px;
+        left: 282px;
+      }
+
+      #line_5 {
+        position: relative;
+        width: 205px;
+        border: 1px solid black;
+        display: none;
+      }
+      #left_2 {
+        width: 10px;
+        transform: rotate(45deg);
+        border: 1px solid black;
+        position: absolute;
+        right: 3px;
+        bottom: 1px;
+      }
+      #right_2 {
+        width: 10px;
+        transform: rotate(-45deg);
+        border: 1px solid black;
+        position: absolute;
+        right: 3px;
+        top: 1px;
+      }
+      #block_2 {
+        width: 10px;
+        height: 30px;
+        background: black;
+        position: absolute;
+        right: -5px;
+        top: -15px;
+      }
+      #text_2 {
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        font-size: 15px;
+        display: none;
+      }
+    </style>
+    <title>Oauth协议效果演示</title>
+  </head>
+  <body>
+    <div id="total">
+      <div id="body1">
+        <div id="html"></div>
+      </div>
+      <div id="right">
+        <div id="top">
+          <div id="one">
+            <div id="user">用户</div>
+            <div id="line_1"></div>
+          </div>
+          <div id="two">
+            <div id="third">第三方应用</div>
+            <div id="line_2"></div>
+          </div>
+          <div id="three">
+            <div id="github">Github</div>
+            <div id="line_3"></div>
+          </div>
+          <div id="four">
+            <div id="line_4">
+              <div id="left_1"></div>
+              <div id="right_1"></div>
+              <div id="block_1"></div>
+              <div id="text_1">访问登录</div>
+            </div>
+          </div>
+          <div id="five">
+            <div id="line_5">
+              <div id="left_2"></div>
+              <div id="right_2"></div>
+              <div id="block_2"></div>
+              <div id="text_2">请求认证</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style id="style"></style>
+    <script src="main.js"></script>
+  </body>
+</html>
