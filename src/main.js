@@ -17,6 +17,7 @@ body{
     padding:10px 30px;
     margin-left:20px;
 }
+
 /*
 *大家是不觉得字有点小
 *那我就放大一点
@@ -27,6 +28,7 @@ body{
 #body1{
     width:40vw;
 }
+
 /*
 *接下来，我要给大家演示Oauth协议了
 *刚才的案例大家看了
@@ -36,6 +38,7 @@ body{
     display:block;
     right:90px;
 }
+
 /*
 *接下来给大家演示的是授权码模式
 *首先是用户、Github、第三方网站
@@ -153,7 +156,16 @@ body{
 #thirteen{
     top:640px;
 }
-
+/*
+*好了，演示结束了
+*/
+body{
+    background:white;
+    color:black;
+}
+#body1{
+    border:1px solid black;
+}
 `
 console.log(string.length)
 let n=-1
@@ -180,6 +192,6 @@ let step=()=>{
             return
         }
         step()
-    },0) 
+    },30) 
 }
 step()
