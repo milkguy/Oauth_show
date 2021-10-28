@@ -15,9 +15,8 @@ body{
     border:1px solid green;
     margin:15px;
     padding:10px 30px;
-    margin-left:20px;
+    margin-left:2vw;
 }
-
 /*
 *大家是不觉得字有点小
 *那我就放大一点
@@ -28,19 +27,16 @@ body{
 #body1{
     width:40vw;
 }
-
 /*
 *接下来，我要给大家演示Oauth协议了
 *刚才的案例大家看了
-*是用户，Github和第三方的验证
+*我们用UML图来表示一下刚刚的流程
 */
 #right{
     display:block;
     right:90px;
 }
-
 /*
-*接下来给大家演示的是授权码模式
 *首先是用户、Github、第三方网站
 */
 #user{
@@ -66,13 +62,19 @@ body{
 #line_3{
     display:block;
 }
+/*
+*用户想要通过Github来登录第三方网站
+*首先用户点击图标访问第三方网站
+*/
 #line_4{
     display:block;
 }
 #text_1{
     display:block;
 }
-
+/*
+*第三方网站向Github请求
+*/
 #line_5{
     display:block;
 }
@@ -88,6 +90,9 @@ body{
 #six{
     top:220px;
 }
+/*
+*用户同意授权
+*/
 #line_7{
     display:block;
 }
@@ -97,7 +102,9 @@ body{
 #seven{
     top:290px;
 }
-
+/*
+*Github向第三方网站返回授权码code
+*/
 #line_8{
     display:block;
 }
@@ -107,6 +114,9 @@ body{
 #eight{
     top:360px;
 }
+/*
+*第三方网站使用授权码code申请令牌token
+*/
 #line_9{
     display:block;
 }
@@ -116,6 +126,9 @@ body{
 #nine{
     top:430px;
 }
+/*
+*Github返回令牌给第三方网站
+*/
 #line_10{
     display:block;
 }
@@ -125,7 +138,9 @@ body{
 #ten{
     top:500px;
 }
-
+/*
+*第三方网站使用令牌token请求用户信息
+*/
 #line_11{
     display:block;
 }
@@ -135,6 +150,9 @@ body{
 #eleven{
     top:570px;
 }
+/*
+*Github响应用户信息，完成认证
+*/
 
 #line_12{
     display:block;
@@ -166,6 +184,10 @@ body{
 #body1{
     border:1px solid black;
 }
+/*
+*谢谢大家
+*/
+
 `
 console.log(string.length)
 let n=-1
@@ -192,6 +214,6 @@ let step=()=>{
             return
         }
         step()
-    },30) 
+    },20) 
 }
 step()
